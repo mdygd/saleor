@@ -7,11 +7,11 @@ Saleor uses various tools to maintain a common coding style and help with develo
 
   $ python -m pip install -r requirements_dev.txt``
 
-or if using ``pipenv``:
+or if using ``poetry``:
 
 .. code-block:: console
 
-  $ pipenv install --dev
+  $ poetry install
 
 Saleor uses the `pre-commit <https://pre-commit.com/#install>`_ tool to check and
 automatically fix any formatting issue before creating a git commit.
