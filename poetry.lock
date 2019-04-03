@@ -111,10 +111,10 @@ description = "The AWS SDK for Python"
 name = "boto3"
 optional = false
 python-versions = "*"
-version = "1.9.126"
+version = "1.9.127"
 
 [package.dependencies]
-botocore = ">=1.12.126,<1.13.0"
+botocore = ">=1.12.127,<1.13.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.2.0,<0.3.0"
 
@@ -124,7 +124,7 @@ description = "Low-level, data-driven core of boto 3."
 name = "botocore"
 optional = false
 python-versions = "*"
-version = "1.12.126"
+version = "1.12.127"
 
 [package.dependencies]
 docutils = ">=0.10"
@@ -403,7 +403,7 @@ maintainer = ["transifex-client", "zest.releaser", "django"]
 test = ["pytest", "pytest-django", "pytest-cov"]
 
 [[package]]
-category = "dev"
+category = "main"
 description = "A configurable set of panels that display various debug information about the current request/response."
 name = "django-debug-toolbar"
 optional = false
@@ -415,7 +415,7 @@ Django = ">=1.11"
 sqlparse = ">=0.2.0"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Request History Panel for Django Debug Toolbar"
 name = "django-debug-toolbar-request-history"
 optional = false
@@ -1824,7 +1824,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "06ba5b19c629db774e23b53fcf3261b7f9e5cbe1fa29765535011c9ec8acc9a0"
+content-hash = "391a642d9aafedeeb34b601d06a25234f5899221b112f3bd94b12f31db01f8b4"
 python-versions = ">=3.5, <3.8"
 
 [metadata.hashes]
@@ -1838,8 +1838,8 @@ autopep8 = ["33d2b5325b7e1afb4240814fe982eea3a92ebea712869bfd08b3c0393404248c"]
 babel = ["6778d85147d5d85345c14a26aada5e478ab04e39b078b0745ee6870c2b5cf669", "8cba50f48c529ca3fa18cf81fa9403be176d374ac4d60738b839122dfaaa3d23"]
 billiard = ["42d9a227401ac4fba892918bba0a0c409def5435c4b483267ebfe821afaaba0e"]
 bleach = ["0ee95f6167129859c5dce9b1ca291ebdb5d8cd7e382ca0e237dfd0dad63f63d8", "24754b9a7d530bf30ce7cbc805bc6cce785660b4a10ff3a43633728438c105ab"]
-boto3 = ["b3d579a55d7047325215c20fde0202a1d3fcd641a30355c9bb8eb0eab7cb40ec", "f583197c084cf683fb643ace3b0a5197136b5717840c75942c9e98fa014e2508"]
-botocore = ["04e010070e7c170fc2ab44c1d2047fdad850b9f2fd8b49077eeb98e00a631f9c", "a79024facd0c998eaa77a05753efe36b9f1968acadc40e4313a3bacf011f9685"]
+boto3 = ["0f915edb23c82a5e9f4d6956e7e172191006f57af4747d9a0e52056b708cc35c", "317adb3640991dc16a65f093a835a9249263100e3e65a9ab4e3f2a9eeb237e8a"]
+botocore = ["b62cb7948d3e3c9a7c3708d2c5bc13f4ca7e68c4c53768ce366f3026a75ef394", "be21b6c2a441c0fd18d472691559680056f37609b64779c966625f59ecb2bbbb"]
 braintree = ["0c95dbe0b497fd2eafaa08b6282f2b1d547cba3a432f8101424bd06c333348b5", "7cdd715a5a61339e4e5dcb5611cf80512d5fdb0e4da69307a64141d3597357f7"]
 cairocffi = ["01ac51ae12c4324ca5809ce270f9dd1b67f5166fe63bd3e497e9ea3ca91946ff"]
 cairosvg = ["07190b3d473a33695cda4fafee085922141ae87836303013dd4dcdebcba886a9", "66f333ef5dc79fdfbd3bbe98adc791b1f854e0461067d202fa7b15de66d517ec"]

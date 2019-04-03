@@ -23,6 +23,8 @@ django-babel = "^0.6.2"
 django-bootstrap4 = "^0.0.7"
 django-cache-url = "^3.0"
 django-countries = "^5.3"
+django-debug-toolbar = "^1.11"
+django-debug-toolbar-request-history = "^0.0.9"
 django-filter = "^2.1"
 django-fsm = "^2.6"
 django-graphql-jwt = "^0.2.1"
@@ -61,14 +63,13 @@ social-auth-app-django = "^3.1"
 text-unidecode = "^1.2"
 uwsgi = {version = "^2.0", platform = "!= win32, != cygwin"}  # exclude windows
 celery = {version = "^4.1", extras = ["redis"]}
-redis = "<3.0.0"
+redis = "<3.0.0"  # this can be safely removed after Celery v4.2.2 is released
 kombu = "<4.3.0"   # kombu version is pinned to avoid issues described here https://github.com/celery/celery/issues/5369
 weasyprint = "^45.0"
 graphene-django-optimizer = "^0.3.6"
 braintree = "~3.49"
 razorpay = "^1.1"
 stripe = "^2.21"
-urllib3 = "~1.23"
 
 [tool.poetry.dev-dependencies]
 pytest = "~4.0"
@@ -89,8 +90,6 @@ yapf = "^0.26.0"
 django-extensions = "^2.1"
 pylint-plugin-utils = "^0.5.0"
 transifex-client = "^0.13.6"
-django-debug-toolbar = "^1.11"
-django-debug-toolbar-request-history = "^0.0.9"
 freezegun = "^0.3.11"
 
 [build-system]
