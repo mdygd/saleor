@@ -62,9 +62,7 @@ requests = "^2.21"
 social-auth-app-django = "^3.1"
 text-unidecode = "^1.2"
 uwsgi = {version = "^2.0", platform = "!= win32, != cygwin"}  # exclude windows
-celery = {version = "^4.1", extras = ["redis"]}
-redis = "<3.0.0"  # this can be safely removed after Celery v4.2.2 is released
-kombu = "<4.3.0"   # kombu version is pinned to avoid issues described here https://github.com/celery/celery/issues/5369
+celery = {version = "^4.2.2", extras = ["redis"]}
 weasyprint = "^45.0"
 graphene-django-optimizer = "^0.3.6"
 braintree = "~3.49"
