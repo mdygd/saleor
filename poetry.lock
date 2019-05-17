@@ -147,10 +147,10 @@ description = "The AWS SDK for Python"
 name = "boto3"
 optional = false
 python-versions = "*"
-version = "1.9.149"
+version = "1.9.150"
 
 [package.dependencies]
-botocore = ">=1.12.149,<1.13.0"
+botocore = ">=1.12.150,<1.13.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.2.0,<0.3.0"
 
@@ -160,7 +160,7 @@ description = "Low-level, data-driven core of boto 3."
 name = "botocore"
 optional = false
 python-versions = "*"
-version = "1.12.149"
+version = "1.12.150"
 
 [package.dependencies]
 docutils = ">=0.10"
@@ -393,7 +393,7 @@ description = "Use an URL to configure email backend settings in your Django App
 name = "dj-email-url"
 optional = false
 python-versions = "*"
-version = "0.1.0"
+version = "0.2.0"
 
 [[package]]
 category = "main"
@@ -441,7 +441,7 @@ description = "Bootstrap support for Django projects"
 name = "django-bootstrap4"
 optional = false
 python-versions = "*"
-version = "0.0.7"
+version = "0.0.8"
 
 [[package]]
 category = "main"
@@ -493,7 +493,7 @@ description = "Request History Panel for Django Debug Toolbar"
 name = "django-debug-toolbar-request-history"
 optional = false
 python-versions = "*"
-version = "0.0.9"
+version = "0.0.10"
 
 [package.dependencies]
 django-debug-toolbar = "*"
@@ -578,8 +578,8 @@ category = "main"
 description = "Utilities for implementing Modified Preorder Tree Traversal with your Django Models and working with trees of Model instances."
 name = "django-mptt"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.9.1"
+python-versions = ">=3.5"
+version = "0.10.0"
 
 [package.dependencies]
 Django = ">=1.11"
@@ -908,7 +908,7 @@ description = "Optimize database access inside graphene queries."
 name = "graphene-django-optimizer"
 optional = false
 python-versions = "*"
-version = "0.3.6"
+version = "0.4.0"
 
 [[package]]
 category = "main"
@@ -1603,14 +1603,14 @@ category = "main"
 description = "Python HTTP for Humans."
 name = "requests"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.21.0"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "2.22.0"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
 chardet = ">=3.0.2,<3.1.0"
 idna = ">=2.5,<2.9"
-urllib3 = ">=1.21.1,<1.25"
+urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
 
 [package.extras]
 security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)"]
@@ -1790,7 +1790,7 @@ description = "tox is a generic virtualenv management and test command line tool
 name = "tox"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "3.11.0"
+version = "3.11.1"
 
 [package.dependencies]
 filelock = ">=3.0.0,<4"
@@ -1955,18 +1955,18 @@ multidict = ">=4.0"
 
 [[package]]
 category = "dev"
-description = "Pathlib-compatible object wrapper for zip files"
+description = "Backport of pathlib-compatible object wrapper for zip files"
 name = "zipp"
 optional = false
 python-versions = ">=2.7"
-version = "0.5.0"
+version = "0.5.1"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "c9e9215aeaae5f79398133c137375f672ec584477e5c08eb7f2cc0c19bcf63f0"
+content-hash = "328d3b5d382246dcd56217c8ae5de9b4bb8325850334c9e68766f19b3826b6f2"
 python-versions = ">=3.6, <3.8"
 
 [metadata.hashes]
@@ -1983,8 +1983,8 @@ babel = ["6778d85147d5d85345c14a26aada5e478ab04e39b078b0745ee6870c2b5cf669", "8c
 billiard = ["756bf323f250db8bf88462cd042c992ba60d8f5e07fc5636c24ba7d6f4261d84"]
 black = ["09a9dcb7c46ed496a9850b76e4e825d6049ecd38b611f1224857a79bd985a8cf", "68950ffd4d9169716bcb8719a56c07a2f4485354fec061cdd5910aa07369731c"]
 bleach = ["0ee95f6167129859c5dce9b1ca291ebdb5d8cd7e382ca0e237dfd0dad63f63d8", "24754b9a7d530bf30ce7cbc805bc6cce785660b4a10ff3a43633728438c105ab"]
-boto3 = ["699870f715808bd9102441231f7b7305daf406af76e5c842d10aa3501738db90", "c623f08b178b4afb960b0a8bf2af18d1410ffd6641aafcba983de688110dcba2"]
-botocore = ["0ceea169004bf28280b53f6c8ff1ea5dd11e48a0ed73a5826109ad9fb6594b96", "aeb2e2fd5632b672441fcccd0c84c4ec019e485a4c2091f9b3e3c2498e3ba988"]
+boto3 = ["1253809000b3b9020c6dde3e8b0b75e6c02547e2760656d8bccc40fd2a7284a6", "e32a1a324ddfb652dedd550fd288ad85cc8d448ed19315f39fbe7b6171a30dc8"]
+botocore = ["946fd5e85378c3c597d6b9f495706576a0fc0000b216e30346ed7ee796ff50c8", "f82e44af499a8f806c363ab4e26df82195b5b190c4169ccfbfbc98e55aa22bf7"]
 braintree = ["0c95dbe0b497fd2eafaa08b6282f2b1d547cba3a432f8101424bd06c333348b5", "7cdd715a5a61339e4e5dcb5611cf80512d5fdb0e4da69307a64141d3597357f7"]
 cairocffi = ["01ac51ae12c4324ca5809ce270f9dd1b67f5166fe63bd3e497e9ea3ca91946ff"]
 cairosvg = ["b5b67bc598f73693490b1bed8bc6e0ae447cf3a6d986c285db309343b90786ee", "c4fdf392a6730fd70edf6f9d3b7185150cf011b9d134839b3e98a2c8aba8d6d1"]
@@ -2001,16 +2001,16 @@ cssselect2 = ["267eebc7378ade2e8be710cd0179606ad9c95ecc673138fccfcfba42c5ce153d"
 dataclasses = ["454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f", "6988bd2b895eef432d562370bb707d540f32f7360ab13da45340101bc2307d84"]
 defusedxml = ["6687150770438374ab581bb7a1b327a847dd9c5749e396102de3fad4e8a3ef93", "f684034d135af4c6cbb949b8a4d2ed61634515257a67299e5f940fbaa34377f5"]
 dj-database-url = ["4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163", "851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"]
-dj-email-url = ["84f32673156f58d740a14cab09f04ca92a65b2c8881b60e31e09e67d7853e544", "de8e062c1483d1bfc7a9a185c6601f9c822087bd529756989f81f1dc82855cee"]
+dj-email-url = ["0362e390c17cc377f03bcbf6daf3f671797c929c1bf78a9f439d78f215ebe3fd", "136ac43c7f29022130fc4769b4ca8b01cd1c39fedf1659c641c143808182a084"]
 django = ["6fcc3cbd55b16f9a01f37de8bcbe286e0ea22e87096557f1511051780338eaea", "bb407d0bb46395ca1241f829f5bd03f7e482f97f7d1936e26e98dacb201ed4ec"]
 django-appconf = ["35f13ca4d567f132b960e2cd4c832c2d03cb6543452d34e29b7ba10371ba80e3", "c98a7af40062e996b921f5962a1c4f3f0c979fa7885f7be4710cceb90ebe13a6"]
 django-babel = ["1e621b198e1f98ae4f93e43463cf78cbedbace475eb6e0853ba1e2567f3b8119", "b62084a6f0cbf2e7af719bd129abfe54608a52645c0677aff5a728f586873af7"]
-django-bootstrap4 = ["32ffee49c4c8ca7df543aac8733a5d45ad304078f920a0167819525bd33a955a"]
+django-bootstrap4 = ["9f115534ae8d052d397201f3d716c10d7c9832b422e44dd7382418c6f274df18"]
 django-cache-url = ["235950e2d7cb16164082167c2974301e2f0fb2313d40bfacc9d24f5b09c3514b", "964120787dc80e568a355385a3880a19f2f00219c251903956f3137d1583d097"]
 django-celery-results = ["80292a68c8b705c788ff0bca9cacc5a431a4de39d7ff49e2ca8277b700d3d616", "89ae9e32076efc65bcba31bc729870da9b230c63af22b673b79170c4a98039b1"]
 django-countries = ["5307a61172eee5740720e44ea08721858b7d8bf8509ec7701ccd7a8d21120b9a", "e4eaaec9bddb9365365109f833d1fd0ecc0cfee3348bf5441c0ccefb2d6917cd"]
 django-debug-toolbar = ["89d75b60c65db363fb24688d977e5fbf0e73386c67acf562d278402a10fc3736", "c2b0134119a624f4ac9398b44f8e28a01c7686ac350a12a74793f3dd57a9eea0"]
-django-debug-toolbar-request-history = ["8171eb415aba8336e70815d8827b78714044bdd0a08092daf831dee741288fc4"]
+django-debug-toolbar-request-history = ["e5ec8a228d37384d704de2656f375ced29cfd51655b2e7ea706eb1c487e4da5d"]
 django-elasticsearch-dsl = ["114889f0f70d584e300953b9fc75f312b447e3ff96136dad03028654ba9f4cbd", "8c96714d8eef30763e820a2909663b236df765e5c6c8508721489dc9713dfef7"]
 django-extensions = ["109004f80b6f45ad1f56addaa59debca91d94aa0dc1cb19678b9364b4fe9b6f4", "307766e5e6c1caffe76c5d99239d8115d14ae3f7cab2cd991fcffd763dad904b"]
 django-filter = ["3dafb7d2810790498895c22a1f31b2375795910680ac9c1432821cbedb1e176d", "a3014de317bef0cd43075a0f08dfa1d319a7ccc5733c3901fb860da70b0dda68"]
@@ -2018,7 +2018,7 @@ django-graphql-jwt = ["6dcf9dd4990098e289d76ab4220edbf436a2e26dc6af1d4a526ac699a
 django-impersonate = ["63b62d06f93b0318698c68f7314c78473914c262d4164eb66ad860bb83e04771"]
 django-js-asset = ["8ec12017f26eec524cab436c64ae73033368a372970af4cf42d9354fcb166bdd", "c163ae80d2e0b22d8fb598047cd0dcef31f81830e127cfecae278ad574167260"]
 django-measurement = ["a499b19d652235f1ec10c346cf0a5debe821e78a990cc595a4020778f0e85a6b"]
-django-mptt = ["18a41d1b56ca7c02a5b04d246e33ee2d18f6ee5459c02ed1d945f5abdef23a2e", "689a04cce0981671d6061a9928c33a16b47abb0d4cd43cf7dec31ae284fdae9d"]
+django-mptt = ["6bf9eb26e54e92006ca82108a1c946c7df533ec27bddf3f795a83a32a3d1b04b", "c765c1501dd0b5c22f0ca8b948550bd294cd2db68aefa0560c6ed7fcfdf4b95e"]
 django-phonenumber-field = ["1318c09f4e4c1caed8b9351d0e49b0d41a2e68ca323b8930fe1562b632629ab1", "b2d1e9899809b92e07af5484e50c5c79364070fffbf13a1da117ecf0553e8157"]
 django-prices = ["0d997da5f34a3f16aff9ecf586c78b67b747cd292459b85a898cfc0b44f907fb"]
 django-prices-openexchangerates = ["59ede6a48003c463dffeccee9a7f0a292baf763b7dc141255b693abe1f79208c"]
@@ -2043,7 +2043,7 @@ google-measurement-protocol = ["7618c44b875a0c9e80e6cf55e44ed80c04cf74cd2eff7eac
 gprof2dot = ["48c1e168c28b8a8eb23bf30fda78fe2ef218269a41505341ec27c27083e47cf4"]
 graphene = ["b8ec446d17fa68721636eaad3d6adc1a378cb6323e219814c8f98c9928fc9642", "faa26573b598b22ffd274e2fd7a4c52efa405dcca96e01a62239482246248aa3"]
 graphene-django = ["3afd81d47c8b702650e05cc1179fac1cfceae991d241bb164d51f28bed9ec95c", "760a18068feb5457e2ec00d2447c09b2fbac2a6b8c32cc8be2abce3752107ad3"]
-graphene-django-optimizer = ["e3eafbcf343a9501ced71d0a8537dda2b1fe0d7bcf9c31bf0b371556d8ee4467", "f55adcb5452d6d65dfce4afa5de50f6d987bb84c5dd3ccdc89b0802662852b1b"]
+graphene-django-optimizer = ["8d1d73514ec892e6307f90f8035db47cf6b75f3a0188d58848b1d7261f056e86", "9632998a7e3303ebe95a2df6dadcc1d4d137d5946e6c03a2680ce620b49408e2"]
 graphql-core = ["889e869be5574d02af77baf1f30b5db9ca2959f1c9f5be7b2863ead5a3ec6181", "9462e22e32c7f03b667373ec0a84d95fba10e8ce2ead08f29fbddc63b671b0c1"]
 graphql-relay = ["2716b7245d97091af21abf096fabafac576905096d21ba7118fba722596f65db"]
 html5lib = ["20b159aa3badc9d5ee8f5c647e5efd02ed2a66ab8d354930bd9ff139fc1dc0a3", "66cb0dcfdbbc4f9c3ba1a63fdb511ffdbd4f513b2b6d81b80cd26ce6b3fb3736"]
@@ -2103,7 +2103,7 @@ pyyaml = ["1adecc22f88d38052fb787d959f003811ca858b799590a5eaa70e63dca50308c", "4
 raven = ["3fd787d19ebb49919268f06f19310e8112d619ef364f7989246fc8753d469888", "95f44f3ea2c1b176d5450df4becdb96c15bf2632888f9ab193e9dd22300ce46a"]
 razorpay = ["0bea9e11aca8024af0cd741b779cb6d3b0a689a8488e21b5e4b345f8840a0fe4", "8bae5ba6e3d8c7aebf7e4b297d15dfdb4a4b05e6fabd8d56405ac0d2677539bd"]
 redis = ["6946b5dca72e86103edc8033019cc3814c031232d339d5f4533b02ea85685175", "8ca418d2ddca1b1a850afa1680a7d2fd1f3322739271de4b704e0d4668449273"]
-requests = ["502a824f31acdacb3a35b6690b5fbf0bc41d63a24a45c4004352b0242707598e", "7bf2a778576d825600030a110f3c0e3e8edc51dfaafe1c146e39a2027784957b"]
+requests = ["11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4", "9cf5292fcd0f598c671cfc1e0d7d1a7f13bb8085e9a590f48c010551dc6c4b31"]
 requests-oauthlib = ["bd6533330e8748e94bf0b214775fed487d309b8b8fe823dc45641ebcd9a32f57", "d3ed0c8f2e3bbc6b344fa63d6f933745ab394469da38db16bdddb461c7e25140", "dd5a0499abfefd087c6dd96693cbd5bfd28aa009719a7f85ab3fabe3956ef19a"]
 rx = ["13a1d8d9e252625c173dc795471e614eadfe1cf40ffc684e08b8fff0d9748c23", "7357592bc7e881a95e0c2013b73326f704953301ab551fbc8133a6fadab84105"]
 s3transfer = ["7b9ad3213bff7d357f888e0fab5101b56fa1a0548ee77d121c3a3dbfbef4cb2e", "f23d5cb7d862b104401d9021fc82e5fa0e0cf57b7660a1331425aab0c691d021"]
@@ -2118,7 +2118,7 @@ sympy = ["71a11e5686ae7ab6cb8feb5bd2651ef4482f8fd43a7c27e645a165e4353b23e1", "f9
 text-unidecode = ["5a1375bb2ba7968740508ae38d92e1f889a0832913cb1c447d5e2046061a396d", "801e38bd550b943563660a91de8d4b6fa5df60a542be9093f7abf819f86050cc"]
 tinycss2 = ["6427d0e3faa0a5e0e8c9f6437e2de26148a7a197a8b0992789f23d9a802788cf", "9fdacc0e22d344ddd2ca053837c133900fe820ae1222f63b79617490a498507a"]
 toml = ["229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c", "235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e", "f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"]
-tox = ["5358eae59e3bdba5d9bd0794331854e36250e62fa3cf7d4059ae730bfe5ca432", "b7f8eb013c1c5fd758b272d4af97eeba168e6ea3fb604004582fce5aef0771c2"]
+tox = ["0b0f24aabc4296719c1008df82452bbba07f29713c2448f6923850396b7b9586", "1fa40cf60654c981ae8f0dafc8b87fe4ffd1ec3381d90694b97e1eec02e0b5d9"]
 transifex-client = ["88072f466627aabc55ae058314c70547e111d2d2e0cc91b1e327d65969bed778"]
 typed-ast = ["132eae51d6ef3ff4a8c47c393a4ef5ebf0d1aecc96880eb5d6c8ceab7017cc9b", "18141c1484ab8784006c839be8b985cfc82a2e9725837b0ecfa0203f71c4e39d", "2baf617f5bbbfe73fd8846463f5aeafc912b5ee247f410700245d68525ec584a", "3d90063f2cbbe39177e9b4d888e45777012652d6110156845b828908c51ae462", "4304b2218b842d610aa1a1d87e1dc9559597969acc62ce717ee4dfeaa44d7eee", "4983ede548ffc3541bae49a82675996497348e55bafd1554dc4e4a5d6eda541a", "5315f4509c1476718a4825f45a203b82d7fdf2a6f5f0c8f166435975b1c9f7d4", "6cdfb1b49d5345f7c2b90d638822d16ba62dc82f7616e9b4caa10b72f3f16649", "7b325f12635598c604690efd7a0197d0b94b7d7778498e76e0710cd582fd1c7a", "8d3b0e3b8626615826f9a626548057c5275a9733512b137984a68ba1598d3d2f", "8f8631160c79f53081bd23446525db0bc4c5616f78d04021e6e434b286493fd7", "912de10965f3dc89da23936f1cc4ed60764f712e5fa603a09dd904f88c996760", "b010c07b975fe853c65d7bbe9d4ac62f1c69086750a574f6292597763781ba18", "c908c10505904c48081a5415a1e295d8403e353e0c14c42b6d67f8f97fae6616", "c94dd3807c0c0610f7c76f078119f4ea48235a953512752b9175f9f98f5ae2bd", "ce65dee7594a84c466e79d7fb7d3303e7295d16a83c22c7c4037071b059e2c21", "eaa9cfcb221a8a4c2889be6f93da141ac777eb8819f077e1d09fb12d00a09a93", "f3376bc31bad66d46d44b4e6522c5c21976bf9bca4ef5987bb2bf727f4506cbb", "f9202fa138544e13a4ec1a6792c35834250a85958fde1251b6a22e07d1260ae7"]
 typing = ["4027c5f6127a6267a435201981ba156de91ad0d1d98e9ddc2aa173453453492d", "57dcf675a99b74d64dacf6fba08fb17cf7e3d5fdff53d4a30ea2a5e7e52543d4", "a4c8473ce11a65999c8f59cb093e70686b6c84c98df58c1dae9b3b196089858a"]
@@ -2132,4 +2132,4 @@ weasyprint = ["0265efe2a70cc9c972407f4f868fe59b0876ca361b3da609262f05d3c5156e11"
 webencodings = ["a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78", "b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"]
 wrapt = ["4aea003270831cceb8a90ff27c4031da6ead7ec1886023b80ce0dfe0adf61533"]
 yarl = ["024ecdc12bc02b321bc66b41327f930d1c2c543fa9a561b39861da9388ba7aa9", "2f3010703295fbe1aec51023740871e64bb9664c789cba5a6bdf404e93f7568f", "3890ab952d508523ef4881457c4099056546593fa05e93da84c7250516e632eb", "3e2724eb9af5dc41648e5bb304fcf4891adc33258c6e14e2a7414ea32541e320", "5badb97dd0abf26623a9982cd448ff12cb39b8e4c94032ccdedf22ce01a64842", "73f447d11b530d860ca1e6b582f947688286ad16ca42256413083d13f260b7a0", "7ab825726f2940c16d92aaec7d204cfc34ac26c0040da727cf8ba87255a33829", "b25de84a8c20540531526dfbb0e2d2b648c13fd5dd126728c496d7c3fea33310", "c6e341f5a6562af74ba55205dbd56d248daf1b5748ec48a0200ba227bb9e33f4", "c9bb7c249c4432cd47e75af3864bc02d26c9594f49c82e2a28624417f0ae63b8", "e060906c0c585565c718d1c3841747b61c5439af2211e185f6739a9412dfbde1"]
-zipp = ["46dfd547d9ccbf8bdc26ecea52818046bb28509f12bb6a0de1cd66ab06e9a9be", "d7ac25f895fb65bff937b381353c14eb1fa23d35f40abd72a5342cd57eb57fd1"]
+zipp = ["8c1019c6aad13642199fbe458275ad6a84907634cc9f0989877ccc4a2840139d", "ca943a7e809cc12257001ccfb99e3563da9af99d52f261725e96dfe0f9275bc3"]
