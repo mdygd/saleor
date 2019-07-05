@@ -378,6 +378,9 @@ class Product(CountableDjangoObjectType):
         description="The product's default base price.",
         deprecation_reason=("Has been replaced by 'basePrice'"),
     )
+    minimal_variant_price = graphene.Field(
+        Money, description="The price of the cheapest variant (including discounts)."
+    )
     tax_rate = TaxRateType(
         description="A type of tax rate.",
         deprecation_reason=(
