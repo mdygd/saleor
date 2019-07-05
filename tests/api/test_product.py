@@ -712,6 +712,9 @@ def test_create_product(
                             basePrice {
                                 amount
                             }
+                            minimalVariantPrice {
+                                amount
+                            }
                             productType {
                                 name
                             }
@@ -740,7 +743,7 @@ def test_create_product(
     product_is_published = True
     product_charge_taxes = True
     product_tax_rate = "STANDARD"
-    product_price = 22.33
+    product_price = "22.33"
 
     # Mock tax interface with fake response from tax gateway
     monkeypatch.setattr(
@@ -789,6 +792,8 @@ def test_create_product(
     assert data["product"]["taxType"]["taxCode"] == product_tax_rate
     assert data["product"]["productType"]["name"] == product_type.name
     assert data["product"]["category"]["name"] == category.name
+    assert str(data["product"]["basePrice"]["amount"]) == product_price
+    assert str(data["product"]["minimalVariantPrice"]["amount"]) == product_price
     values = (
         data["product"]["attributes"][0]["value"]["slug"],
         data["product"]["attributes"][1]["value"]["slug"],
@@ -1035,6 +1040,9 @@ def test_update_product(
                             basePrice {
                                 amount
                             }
+                            minimalVariantPrice {
+                                amount
+                            }
                             productType {
                                 name
                             }
@@ -1062,6 +1070,8 @@ def test_update_product(
     product_charge_taxes = True
     product_tax_rate = "STANDARD"
     product_price = "33.12"
+    assert str(product.price.amount) == "10.00"
+    assert str(product.minimal_variant_price.amount) == "10.00"
 
     # Mock tax interface with fake response from tax gateway
     monkeypatch.setattr(
@@ -1091,6 +1101,8 @@ def test_update_product(
     assert data["product"]["isPublished"] == product_is_published
     assert data["product"]["chargeTaxes"] == product_charge_taxes
     assert data["product"]["taxType"]["taxCode"] == product_tax_rate
+    assert str(data["product"]["basePrice"]["amount"]) == product_price
+    assert str(data["product"]["minimalVariantPrice"]["amount"]) == product_price
     assert not data["product"]["category"]["name"] == category.name
 
 
