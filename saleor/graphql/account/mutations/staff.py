@@ -340,6 +340,21 @@ class AddressCreate(ModelMutation):
         return response
 
 
+class AddressUpdate(BaseAddressUpdate):
+    class Meta:
+        description = "Updates an address"
+        model = models.Address
+        exclude = ["user_addresses"]
+        permissions = ("account.manage_users",)
+
+
+class AddressDelete(BaseAddressDelete):
+    class Meta:
+        description = "Deletes an address"
+        model = models.Address
+        permissions = ("account.manage_users",)
+
+
 class AddressSetDefault(BaseMutation):
     user = graphene.Field(User, description="An updated user instance.")
 
@@ -373,21 +388,6 @@ class AddressSetDefault(BaseMutation):
 
         utils.change_user_default_address(user, address, address_type)
         return cls(user=user)
-
-
-class AddressUpdate(BaseAddressUpdate):
-    class Meta:
-        description = "Updates an address"
-        model = models.Address
-        exclude = ["user_addresses"]
-        permissions = ("account.manage_users",)
-
-
-class AddressDelete(BaseAddressDelete):
-    class Meta:
-        description = "Deletes an address"
-        model = models.Address
-        permissions = ("account.manage_users",)
 
 
 class UserAvatarUpdate(BaseMutation):
