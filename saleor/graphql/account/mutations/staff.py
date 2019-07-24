@@ -168,9 +168,11 @@ class CustomerUpdate(CustomerCreate):
 
     @classmethod
     def perform_mutation(cls, _root, info, **data):
-        """Override the base method `perform_mutation` of ModelMutation
-        to generate events by comparing the old instance with the new data."""
+        """Update customer model and create events.
 
+        Override the base method `perform_mutation` of ModelMutation
+        to generate events by comparing the old instance with the new data.
+        """
         # Retrieve the data
         original_instance = cls.get_instance(info, **data)
         data = data.get("input")
