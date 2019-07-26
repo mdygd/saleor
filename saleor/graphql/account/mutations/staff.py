@@ -269,7 +269,6 @@ class AddressUpdate(BaseAddressUpdate):
     class Meta:
         description = "Updates an address"
         model = models.Address
-        exclude = ["user_addresses"]
         permissions = ("account.manage_users",)
 
 
