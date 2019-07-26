@@ -25,6 +25,17 @@ All notable, unreleased changes to this project will be documented in this file.
 - Allow selecting the number of rows displayed in dashboard's list views - #4414 by @benekex2
 - Fix generating random avatars when updating staff accounts - #4521 by @maarcingebala
 - Changed license for artwork to CC-BY 4.0
+- Refactor account mutations - #4510 by @fowczarek
+    - split mutations into multiple files
+    - use "Account" prefix for all mutation related to the logged-in user
+    - deprecated mutations:
+        - PasswordReset
+        - CustomerRegister
+        - LoggedUserUpdate
+        - CustomerAddressCreate
+        - CustomerSetDefaultAddress
+        - CustomerPasswordReset
+
 
 
 ## 2.8.0
