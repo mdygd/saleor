@@ -34,6 +34,8 @@ All notable, unreleased changes to this project will be documented in this file.
 - Update JSON menu representation in mutations - #4524 by @maarcingebala
 - Display menu item form errors - #4551 by @dominik-zeglen
 - Add voucher settings - #4556 by @benekex2
+- Add time to sale dates - #4539 by @dominik-zeglen
+
 
 ## 2.8.0
 
