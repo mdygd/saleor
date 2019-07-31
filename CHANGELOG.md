@@ -36,7 +36,6 @@ All notable, unreleased changes to this project will be documented in this file.
 - Add voucher settings - #4556 by @benekex2
 - Add time to sale dates - #4539 by @dominik-zeglen
 
-
 ## 2.8.0
 
 ### Core
